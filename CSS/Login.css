@@ -57,6 +57,7 @@ input[type="password"] {
 
 input[type="email"] + label,
 input[type="password"] + label {
+
     position: absolute;
     top: 20px;
     left: 10px;
@@ -69,6 +70,25 @@ input[type="password"] + label {
 
 input[type="email"]:focus + label,
 input[type="password"]:focus + label {
+
+    display: block;
+    transform: translateY(-100%);
+    font-size: 0.9em;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    padding: 0 5px;
+}
+
+input[type="email"]::placeholder, 
+input[type="password"]::placeholder {
+    color: transparent;
+}
+
+input[type="email"]:not(:placeholder-shown) +label,
+input[type="password"]:not(:placeholder-shown) +label {
+    display: block;
     transform: translateY(-100%);
     font-size: 0.9em;
     font-weight: bold;
