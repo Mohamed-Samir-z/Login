@@ -83,7 +83,7 @@ input[type="password"]:focus + label {
 
 input[type="email"]::placeholder, 
 input[type="password"]::placeholder {
-    color: transparent;
+    color: #eee;
 }
 
 input[type="email"]:not(:placeholder-shown) +label,
@@ -149,4 +149,5 @@ i {
     right: 10px;
     transform: translateY(-50%);
     color: #a09f9f;
+
 }
